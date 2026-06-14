@@ -1,0 +1,31 @@
+baseURL = "https://go-onigmo.github.io/"
+title = "go-onigmo"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[params.phases]]
+  name = "Phase 0 — Scanner, parser & VM"
+  status = "planned"
+  blurb = "Onigmo syntax scanner + parser → AST, a bytecode compiler, and a minimal backtracking VM: literals, classes, `. * + ? {m,n}`, groups, alternation, anchors, with captures."
+[[params.phases]]
+  name = "Phase 1 — Groups & backreferences"
+  status = "planned"
+  blurb = "Named groups `(?<name>…)`, non-greedy and possessive quantifiers, atomic groups `(?>…)`, backreferences `\\1` / `\\k<name>`."
+[[params.phases]]
+  name = "Phase 2 — Lookaround & calls"
+  status = "planned"
+  blurb = "Lookahead/lookbehind `(?=…)` `(?<=…)`, `\\G`, and subexpression calls `\\g<name>`."
+[[params.phases]]
+  name = "Phase 3 — Unicode & encodings"
+  status = "planned"
+  blurb = "Unicode properties `\\p{…}`, POSIX classes, case-folding, and multi-encoding (UTF-8, ASCII-8BIT)."
+[[params.phases]]
+  name = "Phase 4 — ReDoS hardening & optimizer"
+  status = "planned"
+  blurb = "Memoization + timeout/step budget, anchors, first-byte sets and literal prefixes, with benchmarks."
+[[params.phases]]
+  name = "Phase 5 — Ruby surface"
+  status = "planned"
+  blurb = "Full Ruby `Regexp` / `MatchData` surface via the go-embedded-ruby adapter, and the replacement DSL (`\\1`, `\\k<>`, `\\&`, blocks)."
