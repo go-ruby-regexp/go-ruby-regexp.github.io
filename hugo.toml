@@ -7,11 +7,11 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
 
 [[params.phases]]
   name = "Phase 0 — Scanner, parser & VM"
-  status = "planned"
+  status = "ready"
   blurb = "Onigmo syntax scanner + parser → AST, a bytecode compiler, and a minimal backtracking VM: literals, classes, `. * + ? {m,n}`, groups, alternation, anchors, with captures."
 [[params.phases]]
   name = "Phase 1 — Groups & backreferences"
-  status = "planned"
+  status = "ready"
   blurb = "Named groups `(?<name>…)`, non-greedy and possessive quantifiers, atomic groups `(?>…)`, backreferences `\\1` / `\\k<name>`."
 [[params.phases]]
   name = "Phase 2 — Lookaround & calls"

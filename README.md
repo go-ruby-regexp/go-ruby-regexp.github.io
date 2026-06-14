@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/go-onigmo/brand/main/social/go-onigmo.png" alt="go-onigmo/go-onigmo.github.io" width="720"></p>
+
 # go-onigmo.github.io
 
 The organization's institutional landing page, served at
