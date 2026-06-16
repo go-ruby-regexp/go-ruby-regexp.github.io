@@ -86,7 +86,12 @@
       <span class="pill">backtracking VM</span>
       <span class="pill">backreferences</span>
       <span class="pill">lookahead / lookbehind</span>
+      <span class="pill">possessive / atomic</span>
+      <span class="pill">subexpression calls</span>
+      <span class="pill">\p{…} · POSIX classes</span>
+      <span class="pill">UTF-8 / ASCII-8BIT</span>
       <span class="pill">ReDoS-guarded</span>
+      <span class="pill">optimizer prefilters</span>
       <span class="pill">Ruby-compatible</span>
     </div>
     <div class="cta">
@@ -97,6 +102,7 @@
       <a href="/docs/"><img alt="Documentation (MkDocs Material + mike)" src="https://img.shields.io/badge/docs-mkdocs--material-9B1C2E"></a>
       <a href="https://github.com/go-onigmo/regexp/blob/main/LICENSE"><img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/license-BSD--3--Clause-blue"></a>
       <a href="https://go.dev/dl/"><img alt="Go 1.26.4+" src="https://img.shields.io/badge/go-1.26.4%2B-00ADD8"></a>
+      <a href="https://github.com/go-onigmo/regexp"><img alt="Engine roadmap: Phases 0–4 complete" src="https://img.shields.io/badge/phase-0--4%20complete-1a7f37"></a>
     </div>
   </header>
 
@@ -106,7 +112,11 @@
       lookaround, and with different match semantics — so a byte-compatible Ruby regexp needs a
       backtracking engine. go-onigmo is that engine: a faithful backtracking VM, hardened against
       catastrophic backtracking with memoization and a deterministic time/step budget. It is
-      standalone and reusable, and is the regexp backend for go-embedded-ruby.</p>
+      standalone and reusable, and is the regexp backend for go-embedded-ruby. The engine roadmap
+      (<strong>Phases 0–4</strong>) is <strong>complete</strong> — backreferences, lookaround,
+      possessive/atomic quantifiers, recursive subexpression calls, <code>\p{…}</code> and POSIX
+      classes, rune-level <code>/i</code> folding, UTF-8 / ASCII-8BIT encodings, and a transparent
+      optimizer prefilter — differential-tested against MRI, 100% coverage, CI green across 6 arches.</p>
 
     <section class="grid">
       {{ range .Site.Params.phases }}
