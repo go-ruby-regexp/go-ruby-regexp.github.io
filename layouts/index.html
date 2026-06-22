@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ .Site.Title }} — a pure-Go reimplementation of Onigmo, Ruby's regular-expression engine (backtracking VM, no cgo)</title>
-<meta name="description" content="go-onigmo — a pure-Go reimplementation of Onigmo, Ruby's regular-expression engine (backtracking VM, no cgo).">
+<meta name="description" content="go-ruby-regexp — a pure-Go reimplementation of Onigmo, Ruby's regular-expression engine (backtracking VM, no cgo).">
 <style>
   :root {
     --bg: #ffffff; --fg: #1b1f24; --muted: #57606a; --card: #f6f8fa;
@@ -81,8 +81,8 @@
 <body>
   <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light, dark or system theme"><span id="theme-label">🖥️ System</span></button>
   <header class="wrap">
-    <img class="logo" src="/img/logo.svg" alt="go-onigmo logo" width="88" height="88">
-    <h1>go-onigmo</h1>
+    <img class="logo" src="/img/logo.svg" alt="go-ruby-regexp logo" width="88" height="88">
+    <h1>go-ruby-regexp</h1>
     <p class="tagline">Onigmo in pure Go — Ruby's regexp engine, with the features RE2 leaves out, no cgo.</p>
     <div class="pills">
       <span class="pill">pure Go · zero cgo</span>
@@ -99,21 +99,21 @@
     </div>
     <div class="cta">
       <a class="btn primary" href="/docs/">Documentation</a>
-      <a class="btn ghost" href="https://github.com/go-onigmo/regexp">GitHub</a>
+      <a class="btn ghost" href="https://github.com/go-ruby-regexp/regexp">GitHub</a>
     </div>
     <div class="badges">
       <a href="/docs/"><img alt="Documentation (MkDocs Material + mike)" src="https://img.shields.io/badge/docs-mkdocs--material-9B1C2E"></a>
-      <a href="https://github.com/go-onigmo/regexp/blob/main/LICENSE"><img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/license-BSD--3--Clause-blue"></a>
+      <a href="https://github.com/go-ruby-regexp/regexp/blob/main/LICENSE"><img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/license-BSD--3--Clause-blue"></a>
       <a href="https://go.dev/dl/"><img alt="Go 1.26.4+" src="https://img.shields.io/badge/go-1.26.4%2B-00ADD8"></a>
-      <a href="https://github.com/go-onigmo/regexp"><img alt="Engine roadmap: Phases 0–4 complete" src="https://img.shields.io/badge/phase-0--4%20complete-1a7f37"></a>
+      <a href="https://github.com/go-ruby-regexp/regexp"><img alt="Engine roadmap: Phases 0–4 complete" src="https://img.shields.io/badge/phase-0--4%20complete-1a7f37"></a>
     </div>
   </header>
 
   <main class="wrap">
-    <p class="lead">go-onigmo is a pure-Go (no cgo) reimplementation of Onigmo, the regular-expression
+    <p class="lead">go-ruby-regexp is a pure-Go (no cgo) reimplementation of Onigmo, the regular-expression
       engine used by Ruby. Go's standard regexp is RE2 — linear-time but without backreferences or
       lookaround, and with different match semantics — so a byte-compatible Ruby regexp needs a
-      backtracking engine. go-onigmo is that engine: a faithful backtracking VM, hardened against
+      backtracking engine. go-ruby-regexp is that engine: a faithful backtracking VM, hardened against
       catastrophic backtracking with memoization and a deterministic time/step budget. It is
       standalone and reusable, and is the regexp backend for go-embedded-ruby. The engine roadmap
       (<strong>Phases 0–4</strong>) is <strong>complete</strong> — backreferences, lookaround,
@@ -144,7 +144,7 @@
   </main>
 
   <footer class="wrap">
-    BSD-3-Clause · <a href="https://github.com/go-onigmo">github.com/go-onigmo</a>
+    BSD-3-Clause · <a href="https://github.com/go-ruby-regexp">github.com/go-ruby-regexp</a>
   </footer>
   <script>
   (function(){

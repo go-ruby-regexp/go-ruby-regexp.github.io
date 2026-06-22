@@ -1,3 +1,3 @@
 ---
-title: go-onigmo
+title: go-ruby-regexp
 ---

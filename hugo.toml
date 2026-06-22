@@ -1,5 +1,5 @@
-baseURL = "https://go-onigmo.github.io/"
-title = "go-onigmo"
+baseURL = "https://go-ruby-regexp.github.io/"
+title = "go-ruby-regexp"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
 
 [markup.goldmark.renderer]

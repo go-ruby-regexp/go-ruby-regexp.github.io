@@ -1,15 +1,15 @@
-<p align="center"><img src="https://raw.githubusercontent.com/go-onigmo/brand/main/social/go-onigmo.png" alt="go-onigmo/go-onigmo.github.io" width="720"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/go-ruby-regexp/brand/main/social/go-ruby-regexp.png" alt="go-ruby-regexp/go-ruby-regexp.github.io" width="720"></p>
 
-# go-onigmo.github.io
+# go-ruby-regexp.github.io
 
 The organization's institutional landing page, served at
-<https://go-onigmo.github.io> and built with [Hugo](https://gohugo.io). It
+<https://go-ruby-regexp.github.io> and built with [Hugo](https://gohugo.io). It
 is a single page (custom `layouts/index.html`, phase cards driven by
 `[[params.phases]]` in `hugo.toml`).
 
 Documentation lives in a separate repository,
-[go-onigmo/docs](https://github.com/go-onigmo/docs), served at
-<https://go-onigmo.github.io/docs/>. This page links there.
+[go-ruby-regexp/docs](https://github.com/go-ruby-regexp/docs), served at
+<https://go-ruby-regexp.github.io/docs/>. This page links there.
 
 `.github/workflows/deploy-pages.yml` builds the landing with Hugo and deploys it
 to GitHub Pages on every push to `main`.
