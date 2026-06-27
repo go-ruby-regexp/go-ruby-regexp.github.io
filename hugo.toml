@@ -24,7 +24,7 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
 [[params.phases]]
   name = "Phase 4 — ReDoS hardening & optimizer"
   status = "ready"
-  blurb = "`(pc, sp)` memoization, step budget, recursion cap and a wall-clock `WithTimeout`; a start-position / interior-literal prefilter (up to ~210× faster); a benchmark suite."
+  blurb = "`(pc, sp)` memoization, step budget, recursion cap and a wall-clock `WithTimeout`; a start-position / interior-literal prefilter (up to ~210× faster); a lazy-NFA + cached-DFA fast path that beats C Onigmo on literal/alternation/structured scans and pulls inner loops to ~1.6–5× of C (`email` ≈ RE2); a benchmark suite."
 [[params.phases]]
   name = "Phase 5 — Ruby surface"
   status = "planned"
