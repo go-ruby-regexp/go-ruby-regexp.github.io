@@ -41,11 +41,9 @@
   <div class="hero"><div class="wrap">
     <div>
       <h1 class="head">go-ruby-regexp</h1>
-      <p class="sub">Onigmo in pure Go — Ruby's regexp engine, with the features RE2 leaves out, no cgo.</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="/docs/">{{ partial "icons/book.html" . }}Documentation</a>
-        <a class="btn btn-ghost" href="https://github.com/go-ruby-regexp/regexp">{{ partial "icons/github.html" . }}GitHub</a>
-      </div>
+      <p class="sub">Onigmo in {{ if partial "mantra-on.html" . }}Go{{ else }}pure Go{{ end }} — Ruby's regexp engine, with the features RE2 leaves out, {{ if not (partial "mantra-on.html" $) }}no cgo{{ end }}.</p>
+      {{/* [[params.cta]] in hugo.toml: the kit renders the row */}}
+      {{ partial "cta.html" . }}
       <div class="trust">{{ if not (partial "mantra-on.html" $) }}<span class="pill">pure Go · zero cgo</span>{{ end }}<span class="pill">backtracking VM</span><span class="pill">backreferences</span><span class="pill">lookahead / lookbehind</span><span class="pill">possessive / atomic</span><span class="pill">subexpression calls</span><span class="pill">\p{…} · POSIX classes</span><span class="pill">UTF-8 / ASCII-8BIT</span><span class="pill">ReDoS-guarded</span><span class="pill">optimizer prefilters</span><span class="pill">Ruby-compatible</span></div>
       <div class="legacy"><div class="badges">
       <a href="/docs/"><img alt="Documentation (MkDocs Material + mike)" src="https://img.shields.io/badge/docs-mkdocs--material-9B1C2E"></a>
